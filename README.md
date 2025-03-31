@@ -12,6 +12,8 @@ Cuatrimestre: 1
 
 Universidad Politecnica del Estado de Nayarit
 
+En esta materia aprendremos y a realizar codigos de pseint
+
 [Ir a unidad 1](https://github.com/YaretzyR/Programacion-CODIGOS/tree/main/U1)
 
 [Ir a unidad 2](https://github.com/YaretzyR/Programacion-CODIGOS/tree/main/U2)
