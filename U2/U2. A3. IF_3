@@ -1,0 +1,36 @@
+Algoritmo sin_titulo
+	escribir "edad del paciente"
+	leer edad
+	Escribir "años de trabajo del paciente"
+	Leer años
+	Escribir "ingreso actual"
+	Leer ingreso
+	
+	//datos//
+	SI edad >18 Y años >5 Y ingreso >5000 Entonces
+		Escribir "Su credito sera en el rango de 10,000 a los 15,000"
+
+	FinSi
+	
+	SI edad >35 Y años >10 Y ingreso >10000 Entonces
+		Escribir "su credito sera en el rango de 25,000 a los 30,000"
+	FinSi
+	
+	SI edad >60 Y años >20 Y ingreso >20000 Entonces
+		Escribir "Su credito sera en el rango de 50,000 a los 100,000"
+	FinSi
+	
+	escribir "Necesita contactar a un asesor"
+FinAlgoritmo
+
+*** Ejecución Iniciada. ***
+edad del paciente
+> 67
+años de trabajo del paciente
+> 20
+ingreso actual
+> 15000
+Su credito sera en el rango de 10,000 a los 15,000
+su credito sera en el rango de 25,000 a los 30,000
+Necesita contactar a un asesor
+*** Ejecución Finalizada. ***
