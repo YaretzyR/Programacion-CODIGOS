@@ -1,0 +1,52 @@
+Algoritmo ACME
+	Escribir "introduce la contraseña"
+	leer contraseña
+	
+	Mientras contraseña <> "Intento102" hacer 
+		Escribir "Contraseña incorrecta. Contactar a un supervisor"
+		leer contraseña
+	FinMientras
+	
+	Escribir "¡Bienvenido!"
+	
+	suma =0
+	
+	Escribir "Para salir ingresa: ( 4 ceros consecutivos ):"
+	Escribir " Registre la cantidad de piezas fabricadas: "
+	Leer num
+	
+	Mientras num <> 0000 Hacer
+		suma <- suma + num
+		Escribir "Para salir ingresa: ( 4 ceros consecutivos ):"
+		Leer num
+	FinMientras
+	
+	Escribir "La suma total es: ", suma
+	
+	si suma > 10000 Entonces
+		Escribir " Meta cumplida"
+	SiNo
+		Escribir " Alerta para produccion"
+	FinSi
+	
+
+	
+FinAlgoritmo
+
+*** Ejecución Iniciada. ***
+introduce la contraseña
+> intento102
+Contraseña incorrecta. Contactar a un supervisor
+> Intento102
+¡Bienvenido!
+Para salir ingresa: ( 4 ceros consecutivos ):
+ Registre la cantidad de piezas fabricadas:
+> 7
+Para salir ingresa: ( 4 ceros consecutivos ):
+> 0000
+La suma total es: 7
+ Alerta para produccion
+*** Ejecución Finalizada. ***
+
+
+
