@@ -1,0 +1,40 @@
+Proceso ConversionBytes
+    Definir bytes Como Real
+    Definir kilobytes, megabytes, terabytes, petabytes, exabytes, zettabytes, yottabytes Como Real
+	
+    Escribir "Ingrese la cantidad en bytes:"
+    Leer bytes
+	
+	//Proceso bytes a: kilobytes, megabytes, trabytes, petabytes, exabytes, zattabytes, yottabytes//
+	si bytes <= 1024 Entonces
+		unidad = bytes 
+	FinSi
+    kilobytes = bytes / 1024
+    megabytes = kilobytes / 1024
+    terabytes = megabytes / 1024
+    petabytes = terabytes / 1024
+    exabytes = petabytes / 1024
+    zettabytes = exabytes / 1024
+    yottabytes = zettabytes / 1024
+	
+    Escribir "El valor en Kilobyteses igual a : ", kilobytes
+    Escribir "El valor en Megbytes es igual a : ", megabytes
+    Escribir "El valor de terabytes es igual a : ", terabytes
+    Escribir "El valor de petabytes es igual a : ", petabytes
+    Escribir "El valor de Exabytes es igual a : ", exabytes
+    Escribir "El valor de Zettabytes a: ", zettabytes
+    Escribir "El valor de Yottabytes es igual a : ", yottabytes
+Fin Proceso
+
+*** Ejecución Iniciada. ***
+Ingrese la cantidad en bytes:
+> 78
+El valor en Kilobyteses igual a : 0.076171875
+El valor en Megbytes es igual a : 0.0000743866
+El valor de terabytes es igual a : 0.0000000726
+El valor de petabytes es igual a : 0.0000000001
+El valor de Exabytes es igual a : 0
+El valor de Zettabytes a: 0
+El valor de Yottabytes es igual a : 0
+*** Ejecución Finalizada. ***
+
