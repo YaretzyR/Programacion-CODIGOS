@@ -1,0 +1,56 @@
+Algoritmo Calificaciones
+	
+	Escribir "Nombre del alumno"
+	leer alumno 
+	
+	Escribir "Cuantas materias va a evaluar? "
+	leer n
+	
+	para i  = 1 Hasta n Hacer
+		Escribir "materia ", i,  ":"
+		Escribir " Ingrese la calificacion: "
+		leer calificacion
+		
+		
+        suma <- suma + calificacion
+    FinPara
+    
+    promedio <- suma / n
+    Escribir "El promedio es: ", promedio
+	
+	Si promedio > 6 Entonces
+		Escribir " El alumno:  " alumno " Aprobo "
+	sino 
+		si promedio < 6 Entonces
+			Escribir "El alumno: " alumno "Necesita recursamiento"
+		SiNo
+			si promedio = 10 Entonces
+				Escribir "El alumno: " alumno "Es un alumno destacado"
+			FinSi
+		FinSi
+	FinSi
+
+*** Ejecución Iniciada. ***
+Nombre del alumno
+> Anthony
+Cuantas materias va a evaluar?
+> 5
+materia 1:
+ Ingrese la calificacion:
+> 8
+materia 2:
+ Ingrese la calificacion:
+> 9
+materia 3:
+ Ingrese la calificacion:
+> 7
+materia 4:
+ Ingrese la calificacion:
+> 8
+materia 5:
+ Ingrese la calificacion:
+> 9
+El promedio es: 8.2
+ El alumno:  Anthony Aprobo
+*** Ejecución Finalizada. ***
+
