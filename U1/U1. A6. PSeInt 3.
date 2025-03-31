@@ -1,0 +1,52 @@
+Algoritmo Promedio
+	Escribir "nombre del alumno"
+	leer nombre
+	Escribir "edad"
+	leer edad
+	Escribir "Promedio del examen"
+	leer examen
+	Escribir "Promedio de las tareas"
+	leer tareas
+	Escribir "Promedio de trabajos"
+	leer trabajos 
+	
+	//promedio final (examen, tareas, trabajos)
+	promedioFinal = (examen * 0.30) + (tareas * 0.20) + (trabajos * 0.50) 
+	
+	//validar si aprobo
+	aprobado = promedioFinal >= 6
+	
+	//salida de datos 
+	Escribir "Nomre del aumno", nombre
+	Escribir "Edad", edad
+	Escribir "Calificacion del examen", examen
+	Escribir "Calificacion de tareas", tareas 
+	Escribir "Calificacion de tranajos", trabajos
+	Escribir "Promedio final", promedioFinal 
+	Escribir "¿Aprobo?",  aprobado	
+	
+	
+	
+	
+FinAlgoritmo
+
+*** Ejecución Iniciada. ***
+nombre del alumno
+> Anthony
+edad
+> 19
+Promedio del examen
+> 10
+Promedio de las tareas
+> 9
+Promedio de trabajos
+> 10
+Nomre del aumnoAnthony
+Edad19
+Calificacion del examen10
+Calificacion de tareas9
+Calificacion de tranajos10
+Promedio final9.8
+¿Aprobo?VERDADERO
+*** Ejecución Finalizada. ***
+
