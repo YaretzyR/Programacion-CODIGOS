@@ -1,0 +1,71 @@
+Algoritmo Calcular_Rendimiento
+	
+
+	
+	// Solicitar valores //
+	
+	Escribir "Ingrese primer valor:"
+	Leer valor1
+	Escribir "Ingrese segundo valor:"
+	leer valor2
+	Escribir "Ingrese tercer valor:"
+	leer valor3 
+	Escribir "Ingrese cuarto valor:" 
+	leer valor4
+	
+	// Ordenar valores //
+	
+	si valor1>valor2 Y valor1>valor3 Y valor1>valor4 Entonces
+		Escribir "" valor1
+	SiNo
+		si valor2>valor1 Y valor2>valor3 Y valor2>valor4 Entonces
+			Escribir "" valor2
+		SiNo
+			si valor3>valor1 Y valor3>valor2 Y valor3>valor4 Entonces
+				Escribir "" valor3
+			SiNo
+				si valor4>valor1 y valor4>valor2 Y valor4>valor3 Entonces
+					Escribir "" valor4
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+	
+	Si valor1<valor2 Y valor1<valor3 Y valor1<valor4 Entonces
+		Escribir "" valor1
+		si valor2<valor1 Y valor2<valor3 Y valor2<valor4 Entonces
+			Escribir "" valor2
+			si valor3<valor1 Y valor3<valor2 Y valor3<valor4 Entonces
+				Escribir "" valor3
+				si valor4<valor1 Y valor4<valor2 Y valor4<valor3 Entonces
+					Escribir "" valor4
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+	
+	
+	
+
+	
+	
+	
+	
+	
+FinAlgoritmo
+
+*** Ejecución Iniciada. ***
+Ingrese primer valor:
+> 7
+Ingrese segundo valor:
+> 8
+Ingrese tercer valor:
+> 8
+Ingrese cuarto valor:
+> 9
+9
+7
+*** Ejecución Finalizada. ***
+
+
+
