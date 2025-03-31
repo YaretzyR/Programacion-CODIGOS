@@ -1,0 +1,134 @@
+Algoritmo ElTeclas
+	
+		Escribir "ingresa la contraseña"
+		leer cont
+		
+		mientras cont <> "2005-02-15" Hacer
+			Escribir "contraseña incorrecta, vuelva a ingresar la contraseña"
+			leer cont
+		FinMientras
+		
+		escribir "Acceso Valido"
+		
+		Escribir "ingrese lo que va a registrar (1) zanahorias (2) tomates"
+		Leer tz
+		
+		suma=0
+		cost=0
+		si tz = 1 Entonces
+			escribir "cuantas cajas de zanahoria se van a necesitar"
+			leer cj
+			
+			para i=1 Hasta cj
+				escribir "ingrese cuantos kg pesa de la caja ", i,":"
+				leer kg
+				
+				suma=suma+kg
+				val_caja=kg*15.84
+				
+				escribir "el valor de la caja es de $",val_caja
+				
+				cost=cost+val_caja
+				
+			FinPara
+			
+			Escribir "usted ingreso cajas de zanahoria"
+			Escribir "cajas ingresadas: ",cj
+			Escribir "el peso total fue de: ",suma, " kg."
+			Escribir "el precio total fue de $",cost
+			des=cost*0.75
+			si cost >=10000 Entonces
+				Escribir "se le a agregado un descuento del 7.5% ahora su cuenta es de: $",des
+				escribir "necesita envio"
+				leer en
+				cost_fi=des+150
+				si en = "si" Entonces
+					Escribir "el envio tiene un costo de: $150"
+					Escribir "su cuenta final seria de: $",cost_fi
+				FinSi
+			SiNo
+				cost_en=cost+150
+				si cost < 10000 Entonces
+					Escribir "necesita envio"
+					leer l
+					si l = "si" Entonces
+						Escribir "el envio tiene un costo de: $150"
+						Escribir "su cuenta final seeria de: $",cost_en
+					FinSi
+				FinSi
+			FinSi
+			
+			
+			
+		FinSi
+		
+		peso_cajs=10
+		precio=11.34
+		si tz = 2 Entonces
+			escribir "cuantas cajas de (10kg) tomate se necesitan "
+			leer c
+			
+			peso=peso_cajs*c
+			precio_tot=precio*peso
+			
+			Escribir "usted ingreso cajas de tomate"
+			Escribir "cajas ingresadas: ",c
+			Escribir "el peso total fue de: ",peso, " kg."
+			Escribir "el precio total fue de $",precio_tot
+			precio_des=precio_tot*0.75
+			env=precio_des+150
+			si precio_tot >=10000 Entonces
+				Escribir "se le a agregado un descuento del 7.5% ahora su cuenta es de: $",precio_des
+				escribir "necesita envio"
+				leer f
+				si f = "si" Entonces
+					Escribir "el envio tiene un costo de $150"
+					Escribir"su cuenta final es de: $",env
+				FinSi
+			FinSi
+			envi=precio_tot+150
+			si precio_tot < 10000 Entonces
+				Escribir "necesita envio"
+				leer m
+				si m = "si" Entonces
+					Escribir "el envio tiene un costo de: $150"
+					Escribir "su cuenta final seeria de: $",envi
+				FinSi
+			FinSi
+			mientras c<> 100001 Hacer
+				Escribir "ingresa (100001) para salir"
+				leer c
+			FinMientras
+			
+			
+		FinSi
+		
+		
+		
+
+FinAlgoritmo
+
+*** Ejecución Iniciada. ***
+Nombre del alumno
+> Anthony
+Cuantas materias va a evaluar?
+> 5
+materia 1:
+ Ingrese la calificacion:
+> 8
+materia 2:
+ Ingrese la calificacion:
+> 9
+materia 3:
+ Ingrese la calificacion:
+> 7
+materia 4:
+ Ingrese la calificacion:
+> 8
+materia 5:
+ Ingrese la calificacion:
+> 9
+El promedio es: 8.2
+ El alumno:  Anthony Aprobo
+*** Ejecución Finalizada. ***
+
