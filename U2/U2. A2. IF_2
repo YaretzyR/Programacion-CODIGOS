@@ -1,0 +1,26 @@
+Algoritmo valoresMayorAMenor
+	definir num1, num2 Como Entero
+	Escribir "primer numero"
+	leer num1
+	Escribir "segundo numero"
+	leer num2
+	
+	//ordenar numeros de mayor a menor//
+	si num1 > num2 Entonces
+		escribir num1, ( ), num2
+	SiNo
+		escribir num2, ( ), num1 
+	FinSi
+	
+FinAlgoritmo
+
+*** Ejecución Iniciada. ***
+primer numero
+> 6
+segundo numero
+> 7
+76
+*** Ejecución Finalizada. ***
+
+
+
